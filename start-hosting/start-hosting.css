@@ -1,0 +1,64 @@
+main{
+	padding: 1rem;
+}
+.page_heading{
+	text-align: center;
+	color: red;
+}
+.validation_form{
+	width: 30%;
+	margin: 1rem auto;
+}
+.validation_form label,
+.validation_form input,
+.validation_form select{
+	display: block;
+	width: 100%;
+	margin: 1rem auto;
+}
+.validation_form label{
+	font-weight: bold;
+}
+.validation_form input:focus{
+	outline: none;
+	border: 2px solid #008000;
+	background-color: #90EE90;
+}
+
+.validation_form input[type = 'checkbox'],
+.validation_form input[type = 'checkbox'] + label{
+	display: inline-block;
+	width: auto;
+	margin-left: 0.5rem;
+}
+.validation_form input[type = 'checkbox']{
+	width: 1rem;
+	height: 1rem;
+	/*background-color: green;
+	-webkit-appearance: none;
+	appearance: none;*/
+}
+
+.validation_form button[type = 'submit']{
+	display: block;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+	border: 1.9px solid black;
+}
+.validation_form button:hover,
+.validation_form button:active{
+	background-color: white;
+	color: green;
+}
+.validation_form input:invalid{
+	border: 2px solid red;
+	background-color: #F08080;
+}
+
+
+@media(max-width: 40rem){
+	.validation_form{
+		width: 100%;
+	}
+}

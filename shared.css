@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+.section_main{
+	z-index: 10;
+	background-color: #212121;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.body_main{
+	margin: 0px;
+	height: 600px;
+	font-family: sans-serif;
+}
+.toggle_button{
+	background-color: #212121;
+	border: 0px;
+	display: none;
+}
+.toggle_button:focus{
+	outline: none;
+}
+.toggle_button_bar{
+	width: 16px;
+	display: block;
+	border: 1px solid white;
+	margin: 4px;
+}
+.main{
+	display: inline-block;
+	color: #FFFFFF !important;
+	padding: 1rem 0.8rem;
+}
+
+.items{
+	display: flex;
+	list-style: none;
+}
+.item{
+	padding: 0px 24px;
+}
+.link{
+	color: white;
+	text-decoration: none;
+}
+.sublink{
+	background-color: #FF3D00;
+	border-radius: 3px;
+	padding: 5px;
+}
+.main::first-letter{
+	color: blue;
+}
+.section_main:first-child{
+	font-style: italic;
+}
+a:hover{
+	color: #E0E0E0;
+}
+
+.sublink:hover{
+	background-color: white;
+	color: #FF3D00
+}
+.nav_main_bar{
+	position: fixed;
+	width: 80%;
+	height: 100vh;
+	background-color: white;
+	top: 0%;
+	z-index: 20;
+	display: none;
+}
+.items_navbar{
+	text-align: center;
+	margin: 25% auto;
+}
+.item_navbar{
+	list-style: none;
+	padding: 12px 0px;
+}
+.item_navbar a{
+	color: #558B2F;
+	text-decoration: none;
+}
+.backdrop{
+	position: fixed;
+	z-index: 10;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background-color: grey;
+	opacity: 0.4;
+	top: 0px;
+}
+main{
+	min-height: calc(100vh - 4.2rem - 5.6rem);
+	margin-top: 4.2rem;
+}
+
+.main_footer{
+	background-color: black;
+	margin-top: 2.5rem;
+}
+.information{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+}
+.inform_links{
+	margin: 0px 1.2rem;
+	padding: 1.2rem 0px;
+}
+.inform_links a{
+	color: white;
+	text-decoration: none;
+}
+.inform_links a:hover,
+.inform_links a:active{
+	color: #E0E0E0; 
+}
+
+.open{
+	display: block !important;
+}
+
+@media(max-width: 40rem){
+	.items{
+		padding: 0px;
+	}
+	.item{
+		padding: 0px 4px;
+	}
+}
+@media(max-width: 27rem){
+	.div_main{
+		display: none;
+	}
+	.div_icon{
+		display: flex;
+	}
+	.toggle_button{
+		display: inline-block;
+	}
+	.information{
+		flex-direction: column;
+		align-items: center;
+	}
+	.inform_links{
+		padding: 0.4rem 0rem;
+	}
+}

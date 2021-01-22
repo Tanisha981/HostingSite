@@ -1,0 +1,50 @@
+.profile{
+	display: flex;
+	align-items: center;
+}
+.customer_profile{
+	margin-top: 3.2rem;
+	width: 60%;
+}
+.customer_profile img{
+	width: 100%;
+}
+.name{
+	font-size: 2rem;
+	color: red;
+	margin-bottom: 0px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.detail{
+	color: #C0C0C0;
+	margin: 0px;
+}
+.customer_information{
+	padding: 0px 2.5rem;
+	width: 30%;
+}
+.info{
+	text-align: right;
+}
+.views{
+	margin-top: 0px;
+}
+.detail a{
+	text-decoration: none;
+	color: #C0C0C0;
+}
+@media(max-width: 40rem){
+	.profile{
+		flex-direction: column;
+	}
+	.customer_profile{
+		margin-top: 1rem;
+		width: 100%;
+	}
+	.customer_profile img{
+		min-width: 16rem;
+	}
+	.customer_information{
+		width: 100%;
+	}
+}
